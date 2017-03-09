@@ -30,7 +30,7 @@ public class ForageInit implements InitBehaviour {
 				b.place(grain, randRow, randCol);
 				grain.setDraggable(false);
 
-				b.updateStockDisplay();
+				b.doUpdateStock((StaticForageBoard)b);
 			}
 		});
 
@@ -73,7 +73,7 @@ public class ForageInit implements InitBehaviour {
 	            	b.place(grain,randRow, randCol);
 	        		grain.setDraggable(false);
 	        		
-	        		b.updateStockDisplay();
+	        		b.doUpdateStock((MovingForageBoard)b);
 	        }}); 
 
 		 b.starveBirdsButton = new JButton("starve birds");

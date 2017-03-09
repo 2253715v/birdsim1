@@ -14,7 +14,7 @@ public class RandomFly implements FlyBehaviour {
 		b.place(bird,randRow, randCol);
 		bird.setDraggable(false);
 		bird.setSpeed(20);
-		b.updateStockDisplay();
+		b.doUpdateStock((FlockBoard)b);
 		
 		while(!b.scareBirds){
 			randRow = b.rand.nextInt((b.getRows() - 3) + 1) + 0;
@@ -24,7 +24,7 @@ public class RandomFly implements FlyBehaviour {
 			
 		} 
 		bird.remove();
-		b.updateStockDisplay();
+		b.doUpdateStock((FlockBoard)b);
 	}
 
 }

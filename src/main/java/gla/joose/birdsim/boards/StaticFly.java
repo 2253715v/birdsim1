@@ -17,7 +17,7 @@ public class StaticFly implements FlyBehaviour {
     	b.place(bird,randRow, randCol);
 		bird.setDraggable(false);
 		bird.setSpeed(20);
-		b.updateStockDisplay();
+		b.doUpdateStock((StaticForageBoard)b);
 		
 		while(!b.scareBirds){
 			
@@ -95,11 +95,11 @@ public class StaticFly implements FlyBehaviour {
 
 							if(b.starveBirds){
 		                		grain.remove();
-		                		b.updateStockDisplay();
+		                		b.doUpdateStock((StaticForageBoard)b);
 		                	}
 							else if(grain.getRemaining() <=0){
 			        			grain.remove();	
-			        			b.updateStockDisplay();
+			        			b.doUpdateStock((StaticForageBoard)b);
 			        		} 
 			        		int randRow1 = b.rand.nextInt((b.getRows() - 3) + 1) + 0;
 			            	int randCol2 = b.rand.nextInt((b.getColumns() - 3) + 1) + 0; 
@@ -157,11 +157,11 @@ public class StaticFly implements FlyBehaviour {
 							
 							if(b.starveBirds){
 		                		grain.remove();
-		                		b.updateStockDisplay();
+		                		b.doUpdateStock((StaticForageBoard)b);
 		                	}
 							else if(grain.getRemaining() <=0){
 			        			grain.remove();	
-			        			b.updateStockDisplay();
+			        			b.doUpdateStock((StaticForageBoard)b);
 			        		} 
 			        		int randRow1 = b.rand.nextInt((b.getRows() - 3) + 1) + 0;
 			            	int randCol2 = b.rand.nextInt((b.getColumns() - 3) + 1) + 0; 
@@ -182,7 +182,7 @@ public class StaticFly implements FlyBehaviour {
 			
 		}
 		bird.remove();
-		b.updateStockDisplay();
+		b.doUpdateStock((StaticForageBoard)b);
        
 	}
 

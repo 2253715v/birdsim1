@@ -80,10 +80,7 @@ public class MovingForageBoard extends Board{
 	}
 	
 	
-	@Override
-	public void updateStockDisplay(){
-		doUpdateStock((MovingForageBoard)this);
-	}
+	
 	
 
 }

@@ -42,12 +42,10 @@ public class FlockInit implements InitBehaviour {
 	}
 
 	public void doInitBoard(StaticForageBoard b) {
-		// StaticInit init = new StaticInit();
-		// init.doInitBoard(frame, b);
+		//
 	}
 
 	public void doInitBoard(MovingForageBoard b) {
-		// MovingInit init = new MovingInit();
-		// init.doInitBoard(frame, b);
+		//
 	}
 }

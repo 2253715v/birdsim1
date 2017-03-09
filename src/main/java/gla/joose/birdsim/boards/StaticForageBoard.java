@@ -82,10 +82,6 @@ public class StaticForageBoard extends Board{
 	}
 	
 	
-	@Override
-	public void updateStockDisplay(){
-		doUpdateStock((StaticForageBoard)this);
-	}
-		
+	
 	
 }

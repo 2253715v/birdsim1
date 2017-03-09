@@ -125,12 +125,8 @@ public abstract class Board extends Observable implements Observer {
     public abstract void initBoard(JFrame frame);
     
     
-    /**
-     * Notifies the board frame on changes in the number of birds/grains;
-     * must be implemented by a subclass.
-     * 
-     */
-    public abstract void updateStockDisplay();
+    
+   
 
     
     /**
