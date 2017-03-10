@@ -27,18 +27,18 @@ public class Play extends JFrame {
 //		Board forageBoard = new StaticForageBoard(50,50);
 //		forageBoard.setInitBehaviour(new ForageInit());
 //		forageBoard.setUpdateStockBehaviour(new ForageUpdate());
-//		forageBoard.initBoard(play);
+//		forageBoard.initBoard(play,forageBoard);
 //		forageBoard.setFLyBehav(new StaticFly());
 		
 		Board forageBoard = new MovingForageBoard(50,50);
 		forageBoard.setInitBehaviour(new ForageInit());
 		forageBoard.setUpdateStockBehaviour(new ForageUpdate());
-		forageBoard.initBoard(play);
+		forageBoard.initBoard(play,forageBoard);
 		forageBoard.setFLyBehav(new MovingFly());
 //		
 //		Board simpleBoard = new FlockBoard(50,50);
 //		simpleBoard.setInitBehaviour(new FlockInit());
-//		simpleBoard.initBoard(play);
+//		simpleBoard.initBoard(play,simpleBoard);
 //		simpleBoard.setFLyBehav(new RandomFly());
 		
 		

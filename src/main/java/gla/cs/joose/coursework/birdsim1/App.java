@@ -1,4 +1,4 @@
-package gla.cs.joose.coursework.birdsim2;
+package gla.cs.joose.coursework.birdsim1;
 
 /**
  * Hello world!
