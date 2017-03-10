@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import gla.joose.birdsim.boards.Board;
 import gla.joose.birdsim.boards.FlockBoard;
 import gla.joose.birdsim.boards.FlockInit;
+import gla.joose.birdsim.boards.FlockUpdate;
 import gla.joose.birdsim.boards.ForageInit;
 import gla.joose.birdsim.boards.ForageUpdate;
 import gla.joose.birdsim.boards.MovingFly;
@@ -30,16 +31,17 @@ public class Play extends JFrame {
 //		forageBoard.initBoard(play,forageBoard);
 //		forageBoard.setFLyBehav(new StaticFly());
 		
-		Board forageBoard = new MovingForageBoard(50,50);
-		forageBoard.setInitBehaviour(new ForageInit());
-		forageBoard.setUpdateStockBehaviour(new ForageUpdate());
-		forageBoard.initBoard(play,forageBoard);
-		forageBoard.setFLyBehav(new MovingFly());
+//		Board forageBoard = new MovingForageBoard(50,50);
+//		forageBoard.setInitBehaviour(new ForageInit());
+//		forageBoard.setUpdateStockBehaviour(new ForageUpdate());
+//		forageBoard.initBoard(play,forageBoard);
+//		forageBoard.setFLyBehav(new MovingFly());
 //		
-//		Board simpleBoard = new FlockBoard(50,50);
-//		simpleBoard.setInitBehaviour(new FlockInit());
-//		simpleBoard.initBoard(play,simpleBoard);
-//		simpleBoard.setFLyBehav(new RandomFly());
+		Board simpleBoard = new FlockBoard(50,50);
+		simpleBoard.setInitBehaviour(new FlockInit());
+		simpleBoard.setUpdateStockBehaviour(new FlockUpdate());
+		simpleBoard.initBoard(play,simpleBoard);
+		simpleBoard.setFLyBehav(new RandomFly());
 		
 		
 		

@@ -12,6 +12,7 @@ public class PaintGrain implements PaintBehaviour {
 		if(p.getClass() == Grain.class){
 			Grain gr = (Grain) p;
 			int color = Color.HSBtoRGB(1, gr.remaining, 1);
+			System.out.println(color);
 	        g.setColor(new Color(color));
 	        g.fillOval(r.x, r.y, r.width, r.height);
 		}		
